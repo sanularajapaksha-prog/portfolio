@@ -272,7 +272,7 @@ export default function Projects() {
         {otherProjects.map((p, i) => (
           <div
             key={p.name}
-            className={`bg-bg p-12 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
+            className={`card-popup bg-bg p-12 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
               i === 0 ? "reveal delay-100" : "reveal delay-200"
             }`}
           >

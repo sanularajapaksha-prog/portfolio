@@ -61,7 +61,7 @@ export default function References() {
         {refs.map((r, i) => (
           <div
             key={r.name}
-            className={`bg-bg p-11 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
+            className={`card-popup bg-bg p-11 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
               i === 0 ? "reveal-left" : "reveal-right"
             }`}
           >

@@ -66,7 +66,7 @@ export default function Skills() {
         style={{ gap: "2px", background: "rgba(255,255,255,0.07)" }}
       >
         {/* Technical Skills */}
-        <div className="bg-bg p-10 hover:bg-surface transition-colors duration-300 reveal-left">
+        <div className="card-popup bg-bg p-10 hover:bg-surface transition-colors duration-300 reveal-left">
           <p className="font-mono text-[10px] text-amber tracking-[3px] uppercase mb-7 flex items-center gap-2.5">
             <span className="w-[5px] h-[5px] bg-amber" />
             Languages &amp; Frameworks
@@ -90,7 +90,7 @@ export default function Skills() {
         </div>
 
         {/* Soft Skills */}
-        <div className="bg-bg p-10 hover:bg-surface transition-colors duration-300 reveal-right">
+        <div className="card-popup bg-bg p-10 hover:bg-surface transition-colors duration-300 reveal-right">
           <p className="font-mono text-[10px] text-amber tracking-[3px] uppercase mb-7 flex items-center gap-2.5">
             <span className="w-[5px] h-[5px] bg-amber" />
             Soft Skills

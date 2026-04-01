@@ -104,6 +104,16 @@ const apis = [
       "Core to travel discovery and navigation features in SeyGo",
     ],
   },
+  {
+    name: "Google AI (Gemini API)",
+    badge: "Multimodal AI",
+    badgeColor: "accent2",
+    points: [
+      "Multimodal reasoning — text, image, and code in a single model",
+      "Used for prototyping AI features before switching to cost-optimised providers",
+      "Integrates with Google Cloud ecosystem for production-ready deployments",
+    ],
+  },
 ];
 
 const engPractices = [
@@ -216,7 +226,7 @@ export default function AIStack() {
           {aiTools.map((t, i) => (
             <div
               key={t.category}
-              className={`bg-bg p-8 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
+              className={`card-popup bg-bg p-8 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
                 i % 2 === 0 ? "reveal-left" : "reveal-right"
               }`}
             >
@@ -310,7 +320,7 @@ export default function AIStack() {
           {apis.map((api, i) => (
             <div
               key={api.name}
-              className={`bg-bg p-7 relative overflow-hidden group transition-colors duration-300 hover:bg-surface ${
+              className={`card-popup bg-bg p-7 relative overflow-hidden group transition-colors duration-300 hover:bg-surface ${
                 i % 2 === 0 ? "reveal-left" : "reveal-right"
               }`}
             >
@@ -386,7 +396,7 @@ export default function AIStack() {
           {workflow.map((w, i) => (
             <div
               key={w.step}
-              className="bg-bg p-5 relative group hover:bg-surface transition-colors duration-300 min-w-[130px]"
+              className="card-popup bg-bg p-5 relative group hover:bg-surface transition-colors duration-300 min-w-[130px]"
             >
               {/* Connector arrow */}
               {i < workflow.length - 1 && (
@@ -432,7 +442,7 @@ export default function AIStack() {
           {whyPoints.map((w) => (
             <div
               key={w.num}
-              className="bg-bg px-8 py-7 relative overflow-hidden group hover:bg-surface transition-colors duration-300"
+              className="card-popup bg-bg px-8 py-7 relative overflow-hidden group hover:bg-surface transition-colors duration-300"
             >
               {/* Big watermark number */}
               <span
