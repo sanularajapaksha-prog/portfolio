@@ -41,7 +41,7 @@ export default function References() {
   }, []);
 
   return (
-    <section className="py-28 px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
+    <section className="py-24 md:py-28 px-6 md:px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
       <div className="mb-16 reveal">
         <p className="font-mono text-[11px] text-accent tracking-[4px] uppercase flex items-center gap-3 mb-3">
           <span className="w-7 h-px bg-accent" />07 — References
@@ -61,7 +61,7 @@ export default function References() {
         {refs.map((r, i) => (
           <div
             key={r.name}
-            className={`card-popup bg-bg p-11 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
+            className={`card-popup bg-bg p-6 md:p-11 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
               i === 0 ? "reveal-left" : "reveal-right"
             }`}
           >

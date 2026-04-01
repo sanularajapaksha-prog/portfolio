@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-[200] h-16 flex items-center justify-between px-14 border-b border-white/[0.07] transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[200] h-16 flex items-center justify-between px-6 md:px-14 border-b border-white/[0.07] transition-all duration-300 ${
         scrolled ? "bg-bg/92 backdrop-blur-2xl" : "bg-bg/80 backdrop-blur-xl"
       }`}
     >

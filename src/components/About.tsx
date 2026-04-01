@@ -38,7 +38,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="py-28 px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
+    <section id="about" className="py-24 md:py-28 px-6 md:px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
       {/* Header */}
       <div className="mb-16 reveal">
         <p className="font-mono text-[11px] text-accent tracking-[4px] uppercase flex items-center gap-3 mb-3">
@@ -52,7 +52,7 @@ export default function About() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_0.9fr] gap-20 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_0.9fr] gap-12 lg:gap-20 items-start">
         {/* Left */}
         <div className="reveal-left">
           <p className="text-[#7a7880] text-[17px] leading-[1.9]">

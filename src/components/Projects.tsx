@@ -63,7 +63,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="py-28 px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
+    <section id="projects" className="py-24 md:py-28 px-6 md:px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
       {/* Header */}
       <div className="mb-16 reveal">
         <p className="font-mono text-[11px] text-accent tracking-[4px] uppercase flex items-center gap-3 mb-3">
@@ -96,7 +96,7 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr]">
           {/* Body */}
-          <div className="p-14">
+          <div className="p-6 md:p-14">
             <p className="font-mono text-[10px] text-[#6a6870] tracking-[3px] mb-4">
               // 01 — Featured · Real-World App · Team Lead
             </p>
@@ -197,7 +197,7 @@ export default function Projects() {
 
           {/* Visual panel */}
           <div
-            className="flex flex-col items-center justify-center gap-5 p-10 relative overflow-hidden min-h-[360px]"
+            className="flex flex-col items-center justify-center gap-5 p-6 md:p-10 relative overflow-hidden min-h-[360px] border-t border-white/[0.07] lg:border-t-0 lg:border-l"
             style={{ background: "rgba(180,245,66,0.015)" }}
           >
             {/* Big bg number */}
@@ -272,7 +272,7 @@ export default function Projects() {
         {otherProjects.map((p, i) => (
           <div
             key={p.name}
-            className={`card-popup bg-bg p-12 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
+            className={`card-popup bg-bg p-8 md:p-12 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
               i === 0 ? "reveal delay-100" : "reveal delay-200"
             }`}
           >

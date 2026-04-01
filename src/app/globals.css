@@ -114,7 +114,7 @@ body::before {
   50%       { transform: translateY(-8px); }
 }
 
-/* ── Card popup on hover ──────────────────────────────────────
+/* ── Card popup on hover (Only for desktop/mouse) ───────────────────
    Apply .card-popup to any card element.
    Uses spring easing (cubic-bezier with overshoot) so the card
    "pops" slightly past its target then settles — feels alive.
@@ -129,13 +129,15 @@ body::before {
   will-change: transform;
 }
 
-.card-popup:hover {
-  transform: scale(1.06) translateY(-4px);
-  z-index: 50;
-  box-shadow:
-    0 24px 64px rgba(0, 0, 0, 0.65),
-    0 0 0 1px rgba(180, 245, 66, 0.12),
-    0 0 40px rgba(180, 245, 66, 0.08);
+@media (hover: hover) and (pointer: fine) {
+  .card-popup:hover {
+    transform: scale(1.06) translateY(-4px);
+    z-index: 50;
+    box-shadow:
+      0 24px 64px rgba(0, 0, 0, 0.65),
+      0 0 0 1px rgba(180, 245, 66, 0.12),
+      0 0 40px rgba(180, 245, 66, 0.08);
+  }
 }
 
 /* Hero entrance animation — used via inline style animation: "fadeUp ..." */

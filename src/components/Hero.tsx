@@ -32,35 +32,35 @@ export default function Hero() {
   return (
     <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2 relative overflow-hidden z-[2]">
       {/* ── LEFT column ── */}
-      <div className="flex flex-col justify-end px-14 pb-24 pt-32 relative z-[2]">
+      <div className="flex flex-col justify-end px-6 md:px-14 pb-12 lg:pb-24 pt-24 lg:pt-32 relative z-[2]">
         {/* Badge */}
         <div
-          className="flex items-center gap-3 font-mono text-[11px] text-accent tracking-[3px] uppercase mb-7"
+          className="flex items-center gap-3 font-mono text-[9px] md:text-[11px] text-accent tracking-[2px] md:tracking-[3px] uppercase mb-5 md:mb-7 flex-wrap"
           style={{ animation: "fadeUp 0.8s 0.2s forwards", opacity: 0 }}
         >
-          <span className="w-6 h-px bg-accent inline-block" />
+          <span className="w-4 md:w-6 h-px bg-accent inline-block" />
           Full-Stack Developer · Sri Lanka
         </div>
 
         {/* Name */}
         <h1
-          className="font-display font-extrabold leading-[0.9] tracking-[-4px] mb-0"
+          className="font-display font-extrabold leading-[0.9] tracking-[-2px] md:tracking-[-4px] mb-0"
           style={{
-            fontSize: "clamp(58px, 7.5vw, 116px)",
+            fontSize: "clamp(46px, 12vw, 116px)",
             animation: "fadeUp 0.8s 0.4s forwards",
             opacity: 0,
           }}
         >
           SANULA
           <br />
-          <em className="not-italic text-accent">RAJA</em>PAKSHA
+          <em className="not-italic text-accent">RAJA</em><span className="break-all md:break-normal">PAKSHA</span>
         </h1>
 
         {/* Title */}
         <p
-          className="font-mono text-[#6a6870] tracking-[5px] uppercase mt-4"
+          className="font-mono text-[#6a6870] tracking-[3px] md:tracking-[5px] uppercase mt-4 md:mt-6 leading-[1.6]"
           style={{
-            fontSize: "clamp(11px, 1.4vw, 14px)",
+            fontSize: "clamp(10px, 1.4vw, 14px)",
             animation: "fadeUp 0.8s 0.6s forwards",
             opacity: 0,
           }}
@@ -136,10 +136,9 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── RIGHT column — Avatar right-aligned ── */}
+      {/* ── RIGHT column — Avatar right-aligned on desktop, stacked on mobile ── */}
       <div
-        className="hidden lg:flex items-center relative"
-        style={{ minHeight: "100%" }}
+        className="flex items-center justify-center lg:justify-end relative min-h-[60vh] lg:min-h-[100%] pb-12 lg:pb-0 px-6 lg:px-0"
       >
         <Avatar3D />
       </div>

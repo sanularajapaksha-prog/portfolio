@@ -179,7 +179,7 @@ export default function AIStack() {
   return (
     <section
       id="ai-stack"
-      className="py-28 px-14 max-w-[1300px] mx-auto z-[2] relative"
+      className="py-24 md:py-28 px-6 md:px-14 max-w-[1300px] mx-auto z-[2] relative"
       ref={sectionRef}
     >
       {/* ── Header ── */}
@@ -226,7 +226,7 @@ export default function AIStack() {
           {aiTools.map((t, i) => (
             <div
               key={t.category}
-              className={`card-popup bg-bg p-8 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
+              className={`card-popup bg-bg p-6 md:p-8 relative overflow-hidden transition-colors duration-300 hover:bg-surface group ${
                 i % 2 === 0 ? "reveal-left" : "reveal-right"
               }`}
             >
@@ -320,7 +320,7 @@ export default function AIStack() {
           {apis.map((api, i) => (
             <div
               key={api.name}
-              className={`card-popup bg-bg p-7 relative overflow-hidden group transition-colors duration-300 hover:bg-surface ${
+              className={`card-popup bg-bg p-5 md:p-7 relative overflow-hidden group transition-colors duration-300 hover:bg-surface ${
                 i % 2 === 0 ? "reveal-left" : "reveal-right"
               }`}
             >
@@ -385,18 +385,20 @@ export default function AIStack() {
 
         {/* Pipeline */}
         <div
-          className="grid"
+          className="flex md:grid pb-4 md:pb-0"
           style={{
             gridTemplateColumns: "repeat(7, 1fr)",
             gap: "2px",
             background: "rgba(255,255,255,0.06)",
             overflowX: "auto",
+            scrollSnapType: "x mandatory",
           }}
         >
           {workflow.map((w, i) => (
             <div
               key={w.step}
-              className="card-popup bg-bg p-5 relative group hover:bg-surface transition-colors duration-300 min-w-[130px]"
+              className="card-popup bg-bg p-4 md:p-5 relative group hover:bg-surface transition-colors duration-300 min-w-[140px] md:min-w-[130px] shrink-0"
+              style={{ scrollSnapAlign: "start" }}
             >
               {/* Connector arrow */}
               {i < workflow.length - 1 && (
@@ -442,7 +444,7 @@ export default function AIStack() {
           {whyPoints.map((w) => (
             <div
               key={w.num}
-              className="card-popup bg-bg px-8 py-7 relative overflow-hidden group hover:bg-surface transition-colors duration-300"
+              className="card-popup bg-bg px-6 md:px-8 py-6 md:py-7 relative overflow-hidden group hover:bg-surface transition-colors duration-300"
             >
               {/* Big watermark number */}
               <span
@@ -470,7 +472,7 @@ export default function AIStack() {
 
         {/* Badge */}
         <div
-          className="mt-0.5 flex items-center gap-4 px-8 py-5 border border-accent/15"
+          className="mt-0.5 flex flex-col items-start gap-4 px-6 md:px-8 py-5 border border-accent/15"
           style={{ background: "rgba(180,245,66,0.03)" }}
         >
           <div className="relative flex-shrink-0">

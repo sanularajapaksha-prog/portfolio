@@ -21,7 +21,7 @@ export default function Footer() {
     <>
       {/* CTA Section */}
       <div className="border-t border-white/[0.07] relative z-[2] overflow-hidden" ref={sectionRef}>
-        <div className="max-w-[1300px] mx-auto px-14 py-32 text-center relative">
+        <div className="max-w-[1300px] mx-auto px-6 md:px-14 py-32 text-center relative">
           {/* Bg ghost text */}
           <span
             className="absolute inset-0 flex items-center justify-center font-display font-extrabold text-transparent pointer-events-none overflow-hidden select-none"
@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-white/[0.07] px-14 py-10 relative z-[2]">
+      <footer className="border-t border-white/[0.07] px-6 md:px-14 py-10 relative z-[2]">
         <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="font-display text-[18px] font-extrabold tracking-tight">
             Sanula <span className="text-accent">Rajapaksha</span>

@@ -79,7 +79,7 @@ export default function Avatar3D() {
 
   return (
     <div
-      className="w-full h-full flex items-center justify-end pointer-events-none select-none"
+      className="w-full h-full flex items-center justify-center lg:justify-end pointer-events-none select-none"
       style={{
         opacity: visible ? 1 : 0,
         transition: "opacity 1.2s ease",
@@ -118,8 +118,9 @@ export default function Avatar3D() {
         style={{
           willChange: "transform",
           transformStyle: "preserve-3d",
-          width: "clamp(320px, 38vw, 540px)",
-          height: "clamp(440px, 72vh, 760px)",
+          width: "100%",
+          maxWidth: "540px",
+          height: "clamp(400px, 60vh, 760px)",
         }}
       >
         {/* Scan line */}
@@ -169,18 +170,18 @@ export default function Avatar3D() {
 
         {/* Floating data tags — left side */}
         <div
-          className="absolute left-[-115%] top-[28%] bg-[#06060a]/90 border border-accent/30 px-3 py-1.5 backdrop-blur-sm whitespace-nowrap z-20"
+          className="absolute left-[-10%] md:left-[-115%] top-[18%] md:top-[28%] bg-[#06060a]/90 border border-accent/30 px-3 py-1.5 backdrop-blur-sm whitespace-nowrap z-[25]"
           style={{ animation: "float 3.2s ease-in-out infinite" }}
         >
-          <span className="font-mono text-[9px] text-accent tracking-widest uppercase">
+          <span className="font-mono text-[8px] md:text-[9px] text-accent tracking-[2px] md:tracking-widest uppercase">
             ◆ Full-Stack Dev
           </span>
         </div>
         <div
-          className="absolute left-[-100%] top-[44%] bg-[#06060a]/90 border border-accent/20 px-3 py-1.5 backdrop-blur-sm whitespace-nowrap z-20"
+          className="absolute right-[-10%] md:right-auto md:left-[-100%] top-[70%] md:top-[44%] bg-[#06060a]/90 border border-accent/20 px-3 py-1.5 backdrop-blur-sm whitespace-nowrap z-[25]"
           style={{ animation: "float 3.8s ease-in-out infinite", animationDelay: "0.8s" }}
         >
-          <span className="font-mono text-[9px] text-accent/70 tracking-widest uppercase">
+          <span className="font-mono text-[8px] md:text-[9px] text-accent/70 tracking-[2px] md:tracking-widest uppercase">
             ◆ IIT · UoW
           </span>
         </div>

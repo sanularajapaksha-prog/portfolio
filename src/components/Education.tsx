@@ -56,7 +56,7 @@ export default function Education() {
   }, []);
 
   return (
-    <section id="education" className="py-28 px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
+    <section id="education" className="py-24 md:py-28 px-6 md:px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
       <div className="mb-16 reveal">
         <p className="font-mono text-[11px] text-accent tracking-[4px] uppercase flex items-center gap-3 mb-3">
           <span className="w-7 h-px bg-accent" />02 — Education
@@ -76,7 +76,7 @@ export default function Education() {
         {education.map((e, i) => (
           <div
             key={e.institution}
-            className="grid grid-cols-[200px_1fr] border-b border-white/[0.07] py-11 relative overflow-hidden group transition-transform duration-200 hover:translate-x-1"
+            className="grid grid-cols-1 md:grid-cols-[200px_1fr] md:gap-4 border-b border-white/[0.07] py-9 md:py-11 relative overflow-hidden group transition-transform duration-200 hover:translate-x-1"
             style={i === 0 ? { borderTop: "1px solid rgba(255,255,255,0.07)" } : {}}
           >
             {/* Hover fill */}
