@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  trailingSlash: true,
-  images: { unoptimized: true },
+  // No static export needed — Vercel runs Next.js natively (SSR + ISR + image optimization)
 };
 
 export default nextConfig;
