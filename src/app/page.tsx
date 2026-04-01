@@ -6,6 +6,7 @@ import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Achievement from "@/components/Achievement";
+import AIStack from "@/components/AIStack";
 import References from "@/components/References";
 import Footer from "@/components/Footer";
 
@@ -42,6 +43,8 @@ export default function Home() {
         <Skills />
         <Divider />
         <Achievement />
+        <Divider />
+        <AIStack />
         <Divider />
         <References />
       </main>
