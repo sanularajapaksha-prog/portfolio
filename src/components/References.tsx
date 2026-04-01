@@ -44,7 +44,7 @@ export default function References() {
     <section className="py-28 px-14 max-w-[1300px] mx-auto z-[2] relative" ref={sectionRef}>
       <div className="mb-16 reveal">
         <p className="font-mono text-[11px] text-accent tracking-[4px] uppercase flex items-center gap-3 mb-3">
-          <span className="w-7 h-px bg-accent" />06 — References
+          <span className="w-7 h-px bg-accent" />07 — References
         </p>
         <h2
           className="font-display font-extrabold tracking-[-2px] leading-[0.95]"
